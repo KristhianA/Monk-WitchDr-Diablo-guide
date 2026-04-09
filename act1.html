@@ -1,3 +1,4 @@
+v"}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +24,22 @@ nav a {
   color: #ddd;
   margin: 10px;
   text-decoration: none;
-  font-size: 14px;
 }
 
 nav a:hover {
   color: #f0b90b;
+}
+
+.subnav {
+  background: #111;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+.subnav a {
+  margin: 8px;
+  text-decoration: none;
 }
 
 header {
@@ -38,16 +50,10 @@ header {
 
 h1 {
   color: #f0b90b;
-  margin-bottom: 5px;
 }
 
 h2 {
   color: #f0b90b;
-}
-
-.subtext {
-  color: #aaa;
-  font-size: 14px;
 }
 
 .container {
@@ -62,12 +68,6 @@ h2 {
   margin: 15px 0;
   border-radius: 10px;
   border: 1px solid #2a2a2a;
-  transition: 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  border-color: #f0b90b;
 }
 </style>
 </head>
@@ -75,67 +75,80 @@ h2 {
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="act1.html" style="color:#f0b90b;">Act I</a>
+  <a href="index.html">Core Systems</a>
+  <a href="index.html#acts" style="color:#f0b90b;">Acts</a>
+  <a href="index.html#bosses">Bosses</a>
+  <a href="index.html#routing">Routing</a>
+  <a href="index.html#troubleshooting">Troubleshooting</a>
+  <a href="index.html#endgame">Endgame</a>
+  <a href="index.html#builds">Builds</a>
 </nav>
+
+<div class="subnav">
+  <a href="act1.html" style="color:#f0b90b;">Act I</a>
+  <a href="#" style="color:#555;">Act II</a>
+  <a href="#" style="color:#555;">Act III</a>
+  <a href="#" style="color:#555;">Act IV</a>
+  <a href="#" style="color:#555;">Act V</a>
+</div>
 
 <header>
   <h1>Act I — The Fallen Star</h1>
-  <p class="subtext">Full walkthrough, enemy strategies, and boss guide</p>
+  <p style="color:#aaa;">Full walkthrough, enemy strategies, and boss guide</p>
 </header>
 
 <div class="container">
 
-  <div class="card">
-    <h2>Quests</h2>
-    <p>Fallen Star → Legacy of Cain → Shattered Crown → Skeleton King</p>
-  </div>
+<div class="card">
+<h2>Quests</h2>
+<p>Fallen Star → Legacy of Cain → Shattered Crown → Skeleton King</p>
+</div>
 
-  <div class="card">
-    <h2>Step-by-Step</h2>
-    <p>
-      1. Talk to Leah<br>
-      2. Enter Cathedral<br>
-      3. Progress through levels<br>
-      4. Fight Skeleton King
-    </p>
-  </div>
+<div class="card">
+<h2>Step-by-Step</h2>
+<p>
+1. Talk to Leah<br>
+2. Enter Cathedral<br>
+3. Progress through levels<br>
+4. Fight Skeleton King
+</p>
+</div>
 
-  <div class="card">
-    <h2>Enemy Warnings</h2>
-    <p>
-      Skeleton swarms<br>
-      Grotesque explosions<br>
-      Summoners spawning adds
-    </p>
-  </div>
+<div class="card">
+<h2>Enemy Warnings</h2>
+<p>
+Skeleton swarms<br>
+Grotesque explosions<br>
+Summoners spawning adds
+</p>
+</div>
 
-  <div class="card">
-    <h2>Duo Strategy</h2>
-    <p>
-      Monk groups enemies<br>
-      Witch Doctor uses AoE + pets
-    </p>
-  </div>
+<div class="card">
+<h2>Duo Strategy</h2>
+<p>
+Monk groups enemies<br>
+Witch Doctor uses AoE + pets
+</p>
+</div>
 
-  <div class="card">
-    <h2>Boss — Skeleton King</h2>
+<div class="card">
+<h2>Boss — Skeleton King</h2>
 
-    <p><b>Key Mechanics:</b><br>
-    - Teleport slam attack<br>
-    - Summons skeleton adds</p>
+<p><b>Key Mechanics:</b><br>
+- Teleport slam attack<br>
+- Summons skeleton adds</p>
 
-    <p><b>Strategy:</b><br>
-    - Monk stays close and heals<br>
-    - Witch Doctor stays back and deals damage<br>
-    - Focus boss between summon phases</p>
+<p><b>Strategy:</b><br>
+- Monk stays close and heals<br>
+- Witch Doctor stays back and deals damage<br>
+- Focus boss between summon phases</p>
 
-    <p><b>Common Mistakes:</b><br>
-    - Standing still during slam<br>
-    - Ignoring adds</p>
-  </div>
+<p><b>Common Mistakes:</b><br>
+- Standing still during slam<br>
+- Ignoring adds</p>
+</div>
 
 </div>
 
 </body>
-</html>
+</ht
