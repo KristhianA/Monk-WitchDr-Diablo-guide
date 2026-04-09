@@ -1,3 +1,4 @@
+e"}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,41 +8,60 @@
 <style>
 body {
   font-family: Arial;
-  background: linear-gradient(to bottom, #0b0b0b, #111);
-  color: #eee;
-  margin: 0;
+  background:#0b0b0b;
+  color:#eee;
+  margin:0;
 }
 
 nav {
-  background: #1a1a1a;
-  padding: 12px;
-  text-align: center;
+  background:#1a1a1a;
+  padding:12px;
+  text-align:center;
+  border-bottom:1px solid #333;
+}
+
+nav a {
+  color:#ddd;
+  margin:10px;
+  text-decoration:none;
+}
+
+nav a:hover {
+  color:#f0b90b;
+}
+
+.subnav {
+  background:#111;
+  padding:10px;
+  text-align:center;
+  border-bottom:1px solid #222;
 }
 
 header {
-  text-align: center;
-  padding: 30px;
+  text-align:center;
+  padding:30px;
 }
 
+h1 { color:#ff4444; }
+h2 { color:#f0b90b; }
+
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  max-width:900px;
+  margin:auto;
+  padding:20px;
 }
 
 .card {
-  background: #1c1c1c;
-  padding: 18px;
-  margin: 15px 0;
-  border-radius: 10px;
+  background:#1c1c1c;
+  padding:18px;
+  margin:15px 0;
+  border-radius:10px;
 }
 
-h1 {
-  color: #ff4444;
-}
-
-h2 {
-  color: #f0b90b;
+.boss-nav {
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
 }
 </style>
 </head>
@@ -49,51 +69,53 @@ h2 {
 <body>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="act2.html">Act II</a>
+  <a href="index.html">Core Systems</a>
+  <a href="index.html#acts">Acts</a>
+  <a href="index.html#bosses">Bosses</a>
 </nav>
 
+<div class="subnav">
+  <a href="act2.html" style="color:#f0b90b;">Act II</a>
+</div>
+
 <header>
-<h1>Final Boss — Belial</h1>
+  <h1>Final Boss — Belial</h1>
 </header>
 
 <div class="container">
 
 <div class="card">
-
-<div style="position:relative;">
 <img src="belial.jpg" style="width:100%; border-radius:10px;">
-
-<div style="
-position:absolute;
-bottom:0;
-left:0;
-right:0;
-padding:10px;
-background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-border-radius:10px;
-color:#ccc;">
-Belial — Lord of Lies
-</div>
-
-</div>
-
 </div>
 
 <div class="card">
 <h2>Phases</h2>
 <p>
 Phase 1: Adds<br>
-Phase 2: Explosions<br>
-Phase 3: Giant form
+Phase 2: Explosive ground attacks<br>
+Phase 3: Giant form with heavy AoE
 </p>
 </div>
 
 <div class="card">
 <h2>Strategy</h2>
 <p>
-Avoid green circles, move constantly, and attack during safe windows.
+Avoid green telegraphs, move constantly, and attack during safe windows.
 </p>
+</div>
+
+<div class="card">
+<h2>Common Mistakes</h2>
+<p>
+Standing in poison zones<br>
+Ignoring phase transitions<br>
+Panicking during large AoE attacks
+</p>
+</div>
+
+<div class="boss-nav">
+  <a href="kulle.html">← Previous: Zoltun Kulle</a>
+  <span></span>
 </div>
 
 </div>
