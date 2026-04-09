@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +8,59 @@
 <style>
 body {
   font-family: Arial;
-  background: linear-gradient(to bottom, #0b0b0b, #111);
-  color: #eee;
-  margin: 0;
+  background:#0b0b0b;
+  color:#eee;
+  margin:0;
 }
 
 nav {
-  background: #1a1a1a;
-  padding: 12px;
-  text-align: center;
+  background:#1a1a1a;
+  padding:12px;
+  text-align:center;
+  border-bottom:1px solid #333;
+}
+
+nav a {
+  color:#ddd;
+  margin:10px;
+  text-decoration:none;
+}
+
+nav a:hover {
+  color:#f0b90b;
+}
+
+.subnav {
+  background:#111;
+  padding:10px;
+  text-align:center;
+  border-bottom:1px solid #222;
 }
 
 header {
-  text-align: center;
-  padding: 30px;
+  text-align:center;
+  padding:30px;
 }
 
+h1,h2 { color:#f0b90b; }
+
 .container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+  max-width:900px;
+  margin:auto;
+  padding:20px;
 }
 
 .card {
-  background: #1c1c1c;
-  padding: 18px;
-  margin: 15px 0;
-  border-radius: 10px;
+  background:#1c1c1c;
+  padding:18px;
+  margin:15px 0;
+  border-radius:10px;
 }
 
-h1, h2 {
-  color: #f0b90b;
+.boss-nav {
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
 }
 </style>
 </head>
@@ -45,51 +68,53 @@ h1, h2 {
 <body>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="act2.html">Act II</a>
+  <a href="index.html">Core Systems</a>
+  <a href="index.html#acts">Acts</a>
+  <a href="index.html#bosses">Bosses</a>
 </nav>
 
+<div class="subnav">
+  <a href="act2.html" style="color:#f0b90b;">Act II</a>
+</div>
+
 <header>
-<h1>Major Boss — Zoltun Kulle</h1>
+  <h1>Zoltun Kulle</h1>
 </header>
 
 <div class="container">
 
 <div class="card">
-
-<div style="position:relative;">
 <img src="kulle.jpg" style="width:100%; border-radius:10px;">
-
-<div style="
-position:absolute;
-bottom:0;
-left:0;
-right:0;
-padding:10px;
-background:linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-border-radius:10px;
-color:#ccc;">
-Zoltun Kulle — Arcane Master
-</div>
-
-</div>
-
 </div>
 
 <div class="card">
 <h2>Mechanics</h2>
 <p>
-Falling rocks<br>
-Slow fields<br>
-Teleport attacks
+Falling rocks (high damage)<br>
+Slow time bubbles<br>
+Teleport repositioning
 </p>
 </div>
 
 <div class="card">
 <h2>Strategy</h2>
 <p>
-Keep moving constantly and avoid being trapped in slow zones.
+Keep moving constantly and avoid slow zones. Reposition quickly after teleports.
 </p>
+</div>
+
+<div class="card">
+<h2>Common Mistakes</h2>
+<p>
+Standing in slow fields<br>
+Ignoring falling rock indicators<br>
+Overcommitting to damage
+</p>
+</div>
+
+<div class="boss-nav">
+  <span></span>
+  <a href="belial.html">Next: Belial →</a>
 </div>
 
 </div>
